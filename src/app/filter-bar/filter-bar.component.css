@@ -1,0 +1,12 @@
+.form-container{
+    padding: 2rem;
+}
+
+.form-container>*{
+    width: 15rem;
+}
+
+.filter-search{
+    display: flex;
+    flex-direction: row;
+}

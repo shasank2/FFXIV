@@ -1,0 +1,41 @@
+mat-drawer-container{
+    position: relative;
+}
+.header{
+    background-image: url("../../assets/HeaderImg.jpg");
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon{
+    color: rgb(102, 102, 102);
+    padding-left: 1rem;
+}
+
+.mat-display-2{
+    margin-bottom: 0px;
+    padding: 1.5rem;
+    padding-left: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 0 0 10px black;
+    color: rgb(218, 241, 250);
+}
+
+.holder{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: flex-start;
+    background-image: url("../../assets/FFXIV.jpg");
+    padding-left: 1.5rem;
+}
+
+.holder>button{
+    margin: 2rem;
+    max-width: 330px;
+    min-width: 330px;
+    height: 360px;
+    border: 1px solid rgb(206, 206, 206);   
+    font-size: 8rem;
+    background: rgba(255, 255, 255, 0.2)
+}

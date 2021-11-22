@@ -1,0 +1,15 @@
+.whole-form{
+    width: 500px;
+    margin: auto;
+    border: 1px solid grey;
+    padding-bottom: 2rem;
+}
+  
+.example-full-width {
+    width: 90%;
+}
+
+.form-body{
+    display: flex;
+    justify-content: center;
+}

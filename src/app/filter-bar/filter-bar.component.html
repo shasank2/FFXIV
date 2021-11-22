@@ -1,0 +1,23 @@
+<div class="form-container">
+    <h2>Filter Options</h2>
+    <mat-form-field appearance="fill">
+        <div class="filter-search">
+            <mat-icon>search</mat-icon>
+            <input matInput type="search" (change)="handleChange(searchInput.value)" #searchInput>
+        </div>
+    </mat-form-field>
+    <br><br>
+    <mat-form-field>
+        <mat-label>Origin</mat-label>
+        <mat-select (selectionChange)="handleOriginChange($event)">
+            <mat-option *ngFor="let element of Origin" [value]="element">{{element}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <br><br>
+    <mat-form-field>
+        <mat-label>Roles</mat-label>
+        <mat-select (selectionChange)="handleRoleChange($event)">
+            <mat-option *ngFor="let element of Role" [value]="element">{{element}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>

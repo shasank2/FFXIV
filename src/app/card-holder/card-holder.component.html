@@ -1,0 +1,19 @@
+<mat-drawer-container autosize>
+    <mat-drawer #drawer mode="over">
+        <app-filter-bar (searchedText)="searchedText($event)" (selectedRole)="selectedRole($event)"
+            (selectedOrigin)="selectedOrigin($event)">
+        </app-filter-bar>
+    </mat-drawer>
+    <div class="header">
+        <button mat-icon-button class="menu-icon" (click)="drawer.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <div class="mat-display-2">
+            Final Fantasy XIV
+        </div>
+    </div>
+    <div class="holder">
+        <app-display-cards *ngFor="let job of filterJobs.length>0? filterJobs:Jobs" [item]="job"></app-display-cards>
+        <button mat-raised-button (click)="displayAddItem()">+</button>
+    </div>
+</mat-drawer-container>
